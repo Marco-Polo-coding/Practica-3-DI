@@ -309,79 +309,7 @@ const articles = [
   },
 ];
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const gridItems = document.querySelectorAll(".grid-item");
 
-//   // Obtener el nombre del archivo HTML actual (sin la ruta completa)
-//   const pageName = window.location.pathname.split("/").pop().split(".")[0];
-
-//   // Filtrar los artículos según el nombre de la página
-//   let filteredArticles;
-//   switch (pageName) {
-//     case "index":
-//       filteredArticles = articles; // Mostrar todos los artículos en la página principal
-//       break;
-//     case "news":
-//       filteredArticles = articles.filter((article) => article.category === "News");
-//       break;
-//     case "uselection":
-//       filteredArticles = articles.filter((article) => article.category === "US Election");
-//       break;
-//     case "sports":
-//       filteredArticles = articles.filter((article) => article.category === "Sport");
-//       break;
-//     case "business":
-//       filteredArticles = articles.filter((article) => article.category === "Business");
-//       break;
-//     case "innovation":
-//       filteredArticles = articles.filter((article) => article.category === "Innovation");
-//       break;
-//     case "culture":
-//       filteredArticles = articles.filter((article) => article.category === "Culture");
-//       break;
-//     case "arts":
-//       filteredArticles = articles.filter((article) => article.category === "Arts");
-//       break;
-//     case "travel":
-//       filteredArticles = articles.filter((article) => article.category === "Travel");
-//       break;
-//     case "earth":
-//       filteredArticles = articles.filter((article) => article.category === "Earth");
-//       break;
-//     case "video":
-//       filteredArticles = articles.filter((article) => article.category === "Video");
-//       break;
-//     case "live":
-//       filteredArticles = articles.filter((article) => article.category === "Live");
-//       break;
-//     default:
-//       filteredArticles = articles; // Si no se encuentra la página, mostrar todos los artículos
-//       break;
-//   }
-
-//   // Recorrer cada elemento del grid y asignar los datos del array de artículos filtrados
-//   filteredArticles.forEach((article, index) => {
-//     if (gridItems[index]) {
-//       // Asigna la URL de la imagen al elemento img
-//       const imgElement = gridItems[index].querySelector(".article-image");
-//       imgElement.src = article.image;
-//       imgElement.alt = article.title;
-
-//       // Asigna el título y el enlace del artículo
-//       const titleElement = gridItems[index].querySelector(".title a");
-//       titleElement.textContent = article.title;
-//       titleElement.href = `article.html?id=${article.id}`;
-
-//       // Asigna la descripción del artículo
-//       const descriptionElement = gridItems[index].querySelector(".description");
-//       descriptionElement.textContent = article.description;
-
-//       // Asigna la fecha al componente de tiempo relativo
-//       const relativeTimeElement = gridItems[index].querySelector("relative-time");
-//       relativeTimeElement.setAttribute("time", new Date(article.date).getTime());
-//     }
-//   });
-// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const gridItems = document.querySelectorAll(".grid-item");
@@ -511,160 +439,160 @@ class RelativeTime extends HTMLElement {
 }
 customElements.define("relative-time", RelativeTime);
 
-class CustomSearch extends HTMLElement {
-  constructor() {
-    super();
-    this.articles = articles;
-  }
-
-  connectedCallback() {
-    const dialogBtn = this.querySelector(".dialog-search");
-    const closeBtn = this.querySelector(".close-btnn");
-    const dialog = this.querySelector("dialog");
-
-    dialogBtn.addEventListener("click", () => {
-      dialog.showModal();
-    });
-    closeBtn.addEventListener("click", () => {
-      dialog.close();
-    });
-    const siteSearch = this.querySelector("#site-search");
-    siteSearch.addEventListener("input", (event) => this.search(event));
-
-    this.renderResults("");
-  }
-
-  search(event) {
-    event.preventDefault();
-    const siteSearch = this.querySelector("#site-search");
-    const term = siteSearch.value;
-    
-    this.renderResults(term);
-  }
-
-  renderResults(term = "") {
-    
-    const searchResults = this.querySelector("#search-results");
-    searchResults.innerHTML = "";
-    const _articles = this.articles.filter((article) =>
-      article.title.toLowerCase().includes(term.toLowerCase())
-    );
-
-    
-    const template = this.querySelector("template").content;
-    
-    _articles.map((article) => {
-      const li = template.querySelector("li").cloneNode(true);
-      
-      li.querySelector(".card .item-image").src = article.image;
-      li.querySelector(".card .item-description").textContent =
-        article.description;
-      
-      li.querySelector("relative-time").setAttribute("time", article.date);
-      li.querySelector(".card .item-title a").textContent = article.title;
-
-      const enlace = li.querySelector(".card .item-title a");
-      const href = enlace.href;
-      enlace.href = href.replace("{id}", article.id);
-
-      searchResults.appendChild(li);
-    });
-  }
-}
-customElements.define("custom-search", CustomSearch);
-
 // class CustomSearch extends HTMLElement {
 //   constructor() {
 //     super();
-//     this.articles = articles; // Lista de artículos importada
-
-//     // Guardar una referencia de la función `handleClickOutside` para añadir y remover correctamente el evento
-//     this.handleClickOutside = this.handleClickOutside.bind(this);
+//     this.articles = articles;
 //   }
 
 //   connectedCallback() {
-//     // Elementos y eventos de apertura y cierre del diálogo de búsqueda
 //     const dialogBtn = this.querySelector(".dialog-search");
 //     const closeBtn = this.querySelector(".close-btnn");
 //     const dialog = this.querySelector("dialog");
 
-//     // Abrir el diálogo y agregar el evento `mousedown` en el documento para detectar clic fuera
 //     dialogBtn.addEventListener("click", () => {
-//       dialog.showModal(); // Muestra el diálogo de búsqueda
-//       setTimeout(() => {
-//         document.addEventListener("mousedown", this.handleClickOutside); // Agrega el evento después de un breve retraso
-//       }, 0);
+//       dialog.showModal();
 //     });
-
-//     // Cerrar el diálogo y remover el evento de `mousedown` en el documento
 //     closeBtn.addEventListener("click", () => {
-//       dialog.close(); // Cierra el diálogo de búsqueda
-//       document.removeEventListener("mousedown", this.handleClickOutside); // Remueve el evento de clic
+//       dialog.close();
 //     });
-
-//     // Evento de búsqueda
 //     const siteSearch = this.querySelector("#site-search");
 //     siteSearch.addEventListener("input", (event) => this.search(event));
 
-//     // Inicializa la búsqueda con un término vacío
 //     this.renderResults("");
 //   }
 
-//   // Método de búsqueda que filtra los artículos según el término ingresado
 //   search(event) {
 //     event.preventDefault();
 //     const siteSearch = this.querySelector("#site-search");
-//     const term = siteSearch.value; // Término ingresado por el usuario
-//     this.renderResults(term); // Llama a renderResults con el término ingresado
+//     const term = siteSearch.value;
+    
+//     this.renderResults(term);
 //   }
 
-//   // Renderiza los resultados de búsqueda en el diálogo
 //   renderResults(term = "") {
+    
 //     const searchResults = this.querySelector("#search-results");
-//     searchResults.innerHTML = ""; // Limpia los resultados previos
-
-//     // Filtra los artículos según el término ingresado
+//     searchResults.innerHTML = "";
 //     const _articles = this.articles.filter((article) =>
 //       article.title.toLowerCase().includes(term.toLowerCase())
 //     );
 
-//     const template = this.querySelector("template").content; // Usa el template definido en el HTML
-
-//     // Itera sobre cada artículo filtrado y lo agrega a los resultados
-//     _articles.forEach((article) => {
-//       const li = template.querySelector("li").cloneNode(true); // Clona el elemento de lista de resultados
-
-//       // Asigna la imagen del artículo al item-image
+    
+//     const template = this.querySelector("template").content;
+    
+//     _articles.map((article) => {
+//       const li = template.querySelector("li").cloneNode(true);
+      
 //       li.querySelector(".card .item-image").src = article.image;
+//       li.querySelector(".card .item-description").textContent =
+//         article.description;
+      
+//       li.querySelector("relative-time").setAttribute("time", article.date);
+//       li.querySelector(".card .item-title a").textContent = article.title;
 
-//       // Asigna la descripción del artículo
-//       li.querySelector(".card .item-description").textContent = article.description;
-
-//       // Asigna la fecha en formato timestamp al elemento relative-time
-//       li.querySelector("relative-time").setAttribute("time", new Date(article.date).getTime());
-
-//       // Configura el enlace y el texto del título del artículo
 //       const enlace = li.querySelector(".card .item-title a");
-//       enlace.textContent = article.title;
-//       enlace.href = `article.html?id=${article.id}`; // Actualiza el enlace con el ID del artículo
+//       const href = enlace.href;
+//       enlace.href = href.replace("{id}", article.id);
 
-//       // Añade el elemento a la lista de resultados de búsqueda
 //       searchResults.appendChild(li);
 //     });
 //   }
-
-//   // Maneja el cierre del diálogo si se hace clic fuera de él
-//   handleClickOutside(event) {
-//     const dialog = this.querySelector("dialog");
-//     if (!dialog.contains(event.target)) { // Verifica si el clic ocurrió fuera del diálogo
-//       dialog.close(); // Cierra el diálogo
-//       document.removeEventListener("mousedown", this.handleClickOutside); // Remueve el evento después de cerrar
-//     }
-//   }
 // }
-
-// // Define el elemento personalizado para la búsqueda
 // customElements.define("custom-search", CustomSearch);
+
+class CustomSearch extends HTMLElement {
+  constructor() {
+    super();
+    this.articles = articles; // Lista de artículos importada
+
+    // Guardar una referencia de la función `handleClickOutside` para añadir y remover correctamente el evento
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+  }
+
+  connectedCallback() {
+    // Elementos y eventos de apertura y cierre del diálogo de búsqueda
+    const dialogBtn = this.querySelector(".dialog-search");
+    const closeBtn = this.querySelector(".close-btnn");
+    const dialog = this.querySelector("dialog");
+
+    // Abrir el diálogo y agregar el evento `mousedown` en el documento para detectar clic fuera
+    dialogBtn.addEventListener("click", () => {
+      dialog.showModal(); // Muestra el diálogo de búsqueda
+      setTimeout(() => {
+        document.addEventListener("mousedown", this.handleClickOutside); // Agrega el evento después de un breve retraso
+      }, 0);
+    });
+
+    // Cerrar el diálogo y remover el evento de `mousedown` en el documento
+    closeBtn.addEventListener("click", () => {
+      dialog.close(); // Cierra el diálogo de búsqueda
+      document.removeEventListener("mousedown", this.handleClickOutside); // Remueve el evento de clic
+    });
+
+    // Evento de búsqueda
+    const siteSearch = this.querySelector("#site-search");
+    siteSearch.addEventListener("input", (event) => this.search(event));
+
+    // Inicializa la búsqueda con un término vacío
+    this.renderResults("");
+  }
+
+  // Método de búsqueda que filtra los artículos según el término ingresado
+  search(event) {
+    event.preventDefault();
+    const siteSearch = this.querySelector("#site-search");
+    const term = siteSearch.value; // Término ingresado por el usuario
+    this.renderResults(term); // Llama a renderResults con el término ingresado
+  }
+
+  // Renderiza los resultados de búsqueda en el diálogo
+  renderResults(term = "") {
+    const searchResults = this.querySelector("#search-results");
+    searchResults.innerHTML = ""; // Limpia los resultados previos
+
+    // Filtra los artículos según el término ingresado
+    const _articles = this.articles.filter((article) =>
+      article.title.toLowerCase().includes(term.toLowerCase())
+    );
+
+    const template = this.querySelector("template").content; // Usa el template definido en el HTML
+
+    // Itera sobre cada artículo filtrado y lo agrega a los resultados
+    _articles.forEach((article) => {
+      const li = template.querySelector("li").cloneNode(true); // Clona el elemento de lista de resultados
+
+      // Asigna la imagen del artículo al item-image
+      li.querySelector(".card .item-image").src = article.image;
+
+      // Asigna la descripción del artículo
+      li.querySelector(".card .item-description").textContent = article.description;
+
+      // Asigna la fecha en formato timestamp al elemento relative-time
+      li.querySelector("relative-time").setAttribute("time", new Date(article.date).getTime());
+
+      // Configura el enlace y el texto del título del artículo
+      const enlace = li.querySelector(".card .item-title a");
+      enlace.textContent = article.title;
+      enlace.href = `article.html?id=${article.id}`; // Actualiza el enlace con el ID del artículo
+
+      // Añade el elemento a la lista de resultados de búsqueda
+      searchResults.appendChild(li);
+    });
+  }
+
+  // Maneja el cierre del diálogo si se hace clic fuera de él
+  handleClickOutside(event) {
+    const dialog = this.querySelector("dialog");
+    if (!dialog.contains(event.target)) { // Verifica si el clic ocurrió fuera del diálogo
+      dialog.close(); // Cierra el diálogo
+      document.removeEventListener("mousedown", this.handleClickOutside); // Remueve el evento después de cerrar
+    }
+  }
+}
+
+// Define el elemento personalizado para la búsqueda
+customElements.define("custom-search", CustomSearch);
 
 
 
