@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<custom-search>
+  <div class="flex p-10 shadow-md min-h-60px">
+    <side-menu>
+      <button class="menu-toggle">≡</button>
+    </side-menu>    
+    <!-- <aside class="menu-sidebar">
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Technology</li>
+        <li><a href="sports.html">Sports</a></li>
+      </ul>
+    </aside> -->
+    <span class="logo">
+      <span class="logo-item">J</span>
+      <span class="logo-item">A</span>
+      <span class="logo-item">A</span>
+      <span class="logo-item">T</span>
+    </span>
+    <button class="dialog-search transparent"><i class="fas fa-search"></i></button>
+  </div>
+  <nav class="main-menu">
+    <ul>
+       <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="news.html"data-category="News" >News</a></li>
+      <li><a href="uselection.html"data-category="US Election" >US Election</a></li>
+      <li><a href="sports.html"data-category="Sport" >Sport</a></li>
+      <li><a href="business.html"data-category="Business" >Business</a></li>
+      <li><a href="innovation.html"data-category="Innovation" >Innovation</a></li>
+      <li><a href="culture.html"data-category="Culture" >Culture</a></li>
+      <li><a href="arts.html"data-category="Arts" >Arts</a></li>
+      <li><a href="travel.html"data-category="Travel" >Travel</a></li>
+      <li><a href="earth.html"data-category="Earth" >Earth</a></li>
+      <li><a href="video.html"data-category="Video" >Video</a></li>
+      <li><a href="live.html"data-category="Live" >Live</a></li>
+    </ul>
+  </nav>
+  <div class="side-menu">
+    <button class="close-btn">&times;</button>
+    <ul>
+       <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="news.html"data-category="News" >News</a></li>
+      <li><a href="uselection.html"data-category="US Election" >US Election</a></li>
+      <li><a href="sports.html"data-category="Sport" >Sport</a></li>
+      <li><a href="business.html"data-category="Business" >Business</a></li>
+      <li><a href="innovation.html"data-category="Innovation" >Innovation</a></li>
+      <li><a href="culture.html"data-category="Culture" >Culture</a></li>
+      <li><a href="arts.html"data-category="Arts" >Arts</a></li>
+      <li><a href="travel.html"data-category="Travel" >Travel</a></li>
+      <li><a href="earth.html"data-category="Earth" >Earth</a></li>
+      <li><a href="video.html"data-category="Video" >Video</a></li>
+      <li><a href="live.html"data-category="Live" >Live</a></li>
+    </ul>
+  </div>
+  <dialog>
+    <button class="close-btnn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <!-- <template>
+      <li>
+        <div class="flex flex-col items-center card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="flex flex-col justify-between">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template> -->
+    <template>
+      <li class="search-result-item">
+        <div class="card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="Article Image">
+          <div class="content">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">
+              Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            </p>
+            <relative-time/>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+
+<main>
+  <custom-article>
+    <article class="block">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h1>
+      <relative-time></relative-time>
+      <img src="" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article>
+  </custom-article>
+</main>
+
+<script src="main.js"></script>

@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="./styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<custom-search>
+  <div class="flex p-10 shadow-md min-h-60px">
+    <side-menu>
+      <button class="menu-toggle">≡</button>
+    </side-menu>    
+    <!-- <aside class="menu-sidebar">
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Technology</li>
+        <li><a href="sports.html">Sports</a></li>
+      </ul>
+    </aside> -->
+    <span class="logo">
+      <span class="logo-item">J</span>
+      <span class="logo-item">A</span>
+      <span class="logo-item">A</span>
+      <span class="logo-item">T</span>
+    </span>
+    <button class="dialog-search transparent"><i class="fas fa-search"></i></button>
+  </div>
+  <nav class="main-menu">
+    <ul>
+      <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="news.html"data-category="News" >News</a></li>
+      <li><a href="uselection.html"data-category="US Election" >US Election</a></li>
+      <li><a href="sports.html"data-category="Sport" >Sport</a></li>
+      <li><a href="business.html"data-category="Business" >Business</a></li>
+      <li><a href="innovation.html"data-category="Innovation" >Innovation</a></li>
+      <li><a href="culture.html"data-category="Culture" >Culture</a></li>
+      <li><a href="arts.html"data-category="Arts" >Arts</a></li>
+      <li><a href="travel.html"data-category="Travel" >Travel</a></li>
+      <li><a href="earth.html"data-category="Earth" >Earth</a></li>
+      <li><a href="video.html"data-category="Video" >Video</a></li>
+      <li><a href="live.html"data-category="Live" >Live</a></li>
+    </ul>
+  </nav>
+  <div class="side-menu">
+    <button class="close-btn">&times;</button>
+    <ul>
+      <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="news.html"data-category="News" >News</a></li>
+      <li><a href="uselection.html"data-category="US Election" >US Election</a></li>
+      <li><a href="sports.html"data-category="Sport" >Sport</a></li>
+      <li><a href="business.html"data-category="Business" >Business</a></li>
+      <li><a href="innovation.html"data-category="Innovation" >Innovation</a></li>
+      <li><a href="culture.html"data-category="Culture" >Culture</a></li>
+      <li><a href="arts.html"data-category="Arts" >Arts</a></li>
+      <li><a href="travel.html"data-category="Travel" >Travel</a></li>
+      <li><a href="earth.html"data-category="Earth" >Earth</a></li>
+      <li><a href="video.html"data-category="Video" >Video</a></li>
+      <li><a href="live.html"data-category="Live" >Live</a></li>
+    </ul>
+  </div>
+  <dialog>
+    <button class="close-btnn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <template>
+      <li>
+        <div class="flex flex-col items-center card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="flex flex-col justify-between">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+
+
+<div class="grid-container">
+  <!-- <div id="articles-container"></div> -->
+  <div class="grid-item text-left">
+    <img class="article-image"/>
+    <h1 class="title">
+      <a href="article.html?id=16">Climate Activists Push for Carbon Tax With Measure GG, But Critics Warn it Could
+        Backfire</a>
+    </h1>
+    <p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing man
+      courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented reality.
+      3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone physical
+      order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump computer.
+    </p>
+    <relative-time></relative-time>
+  </div>
+  <div class="grid-item text-left">
+    <img class="article-image" src=""   />
+    <h1 class="title">
+      <a href="article.html?id=17">Omoda E5 in Noble trim - pictures</a>
+    </h1>
+    <p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing man
+      courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented reality.
+      3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone physical
+      order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump computer.</p>
+      <relative-time></relative-time>
+  </div>
+  <div class="grid-item text-left">
+    <img class="article-image" src=""   />
+    <h1 class="title">
+      <a href="article.html?id=18">Lorem title</a>
+    </h1>
+    <p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing man
+      courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented reality.
+      3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone physical
+      order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump computer.</p>
+      <relative-time></relative-time>
+  </div>
+</div>
+
+<script src="main.js"></script>
