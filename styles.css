@@ -3,6 +3,46 @@ body {
   margin: 0;
 }
 
+body.dark-theme {
+  background-color: #111;
+  color: white;
+}
+
+body.dark-theme a {
+  color: #4a90e2; /* Color para enlaces en modo oscuro */
+}
+
+body.dark-theme .side-menu {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-theme .main-menu {
+  background-color: #222;
+}
+
+body.dark-theme .grid-item {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-theme .search-result-item {
+  background-color: #444;
+}
+
+body.dark-theme .title, 
+body.dark-theme .item-title a, 
+body.dark-theme .description, 
+body.dark-theme relative-time {
+  color: #f1f1f1;
+}
+
+body.dark-theme .article-image {
+  border: 1px solid #777;
+}
+
+
+
 .logo {
   color: white;
   text-align: center;

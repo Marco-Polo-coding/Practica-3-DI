@@ -677,7 +677,7 @@ class SideMenu extends HTMLElement {
           width: 200px;
           position: fixed;
           top: 0;
-          left: -250px; /* Oculto fuera de la pantalla por defecto */
+          left: -250px;
           background-color: #111;
           color: white;
           overflow-x: hidden;
@@ -720,6 +720,24 @@ class SideMenu extends HTMLElement {
           cursor: pointer;
         }
 
+        .theme-toggle {
+          position: absolute;
+          top: 10px;
+          left: 15px;
+          padding: 5px 10px;
+          cursor: pointer;
+          font-size: 12px;
+          background-color: #f1f1f1;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+          background-color: #e0e0e0;
+        }
+
         .side-menu ul {
           list-style-type: none;
           padding: 0;
@@ -747,6 +765,7 @@ class SideMenu extends HTMLElement {
       <!-- Botón de apertura y contenedor del menú lateral -->
       <button class="menu-toggle">≡</button>
       <div class="side-menu">
+        <button class="theme-toggle">🌙 Dark Mode</button> <!-- Botón para alternar tema -->
         <button class="close-btn">&times;</button>
         <ul>
           <li><a href="index.html" class="home-link">Home</a></li>
@@ -770,12 +789,15 @@ class SideMenu extends HTMLElement {
     this.menuToggle = this.shadowRoot.querySelector(".menu-toggle");
     this.sideMenu = this.shadowRoot.querySelector(".side-menu");
     this.closeBtn = this.shadowRoot.querySelector(".close-btn");
+    this.themeToggleBtn = this.shadowRoot.querySelector(".theme-toggle");
 
     // Abrir el menú cuando se hace clic en el botón de menú
     this.menuToggle.addEventListener("click", this.openMenu.bind(this));
 
     // Cerrar el menú cuando se hace clic en el botón de cerrar
     this.closeBtn.addEventListener("click", this.closeMenu.bind(this));
+
+    this.themeToggleBtn.addEventListener("click", this.toggleTheme.bind(this));
 
     // Añadir el evento de scroll para ajustar la posición del menú
     window.addEventListener("scroll", this.handleScroll.bind(this));
@@ -819,6 +841,16 @@ class SideMenu extends HTMLElement {
       this.closeMenu(); // Cierra el menú
     }
   }
+
+  toggleTheme() {
+    // Cambia entre los temas claro y oscuro al añadir/quitar una clase al `body`
+    document.body.classList.toggle("dark-theme");
+
+    // Actualizar el texto del botón según el tema actual
+    const isDarkMode = document.body.classList.contains("dark-theme");
+    this.themeToggleBtn.textContent = isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
+  }
+
 }
 
 // Definir el nuevo elemento personalizado
