@@ -62,19 +62,19 @@
     <input type="search" id="site-search" name="q" />
 
     <template>
-      <li>
-        <div class="flex flex-col items-center card">
-          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
-          <div class="flex flex-col justify-between">
+      <li class="search-result-item">
+        <div class="card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="Article Image">
+          <div class="content">
             <h5 class="item-title">
               <a href="article.html?id={id}">
                 {value}
               </a>
             </h5>
-            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
-              reverse chronological order.
+            <p class="item-description">
+              Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
             </p>
-            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+            <relative-time/>
           </div>
         </div>
       </li>
