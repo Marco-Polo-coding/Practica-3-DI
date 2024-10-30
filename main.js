@@ -439,67 +439,6 @@ class RelativeTime extends HTMLElement {
 }
 customElements.define("relative-time", RelativeTime);
 
-// class CustomSearch extends HTMLElement {
-//   constructor() {
-//     super();
-//     this.articles = articles;
-//   }
-
-//   connectedCallback() {
-//     const dialogBtn = this.querySelector(".dialog-search");
-//     const closeBtn = this.querySelector(".close-btnn");
-//     const dialog = this.querySelector("dialog");
-
-//     dialogBtn.addEventListener("click", () => {
-//       dialog.showModal();
-//     });
-//     closeBtn.addEventListener("click", () => {
-//       dialog.close();
-//     });
-//     const siteSearch = this.querySelector("#site-search");
-//     siteSearch.addEventListener("input", (event) => this.search(event));
-
-//     this.renderResults("");
-//   }
-
-//   search(event) {
-//     event.preventDefault();
-//     const siteSearch = this.querySelector("#site-search");
-//     const term = siteSearch.value;
-    
-//     this.renderResults(term);
-//   }
-
-//   renderResults(term = "") {
-    
-//     const searchResults = this.querySelector("#search-results");
-//     searchResults.innerHTML = "";
-//     const _articles = this.articles.filter((article) =>
-//       article.title.toLowerCase().includes(term.toLowerCase())
-//     );
-
-    
-//     const template = this.querySelector("template").content;
-    
-//     _articles.map((article) => {
-//       const li = template.querySelector("li").cloneNode(true);
-      
-//       li.querySelector(".card .item-image").src = article.image;
-//       li.querySelector(".card .item-description").textContent =
-//         article.description;
-      
-//       li.querySelector("relative-time").setAttribute("time", article.date);
-//       li.querySelector(".card .item-title a").textContent = article.title;
-
-//       const enlace = li.querySelector(".card .item-title a");
-//       const href = enlace.href;
-//       enlace.href = href.replace("{id}", article.id);
-
-//       searchResults.appendChild(li);
-//     });
-//   }
-// }
-// customElements.define("custom-search", CustomSearch);
 
 class CustomSearch extends HTMLElement {
   constructor() {
