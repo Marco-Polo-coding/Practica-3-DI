@@ -650,6 +650,16 @@ document.querySelector(".logo").addEventListener("click", () => {
   window.location.href = "./index.html";
 });
 
+// Evento para aplicar el tema en cada carga de página
+document.addEventListener("DOMContentLoaded", () => {
+  const darkModePreference = localStorage.getItem("darkMode");
+
+  // Si el tema oscuro está habilitado, añade la clase `dark-theme` al body
+  if (darkModePreference === "enabled") {
+      document.body.classList.add("dark-theme");
+  }
+});
+
 class SideMenu extends HTMLElement {
   constructor() {
     super();
@@ -799,6 +809,7 @@ class SideMenu extends HTMLElement {
     `;
   }
 
+  // Al cargar la página, aplicar la preferencia de tema guardada en localStorage
   connectedCallback() {
     this.menuToggle = this.shadowRoot.querySelector(".menu-toggle");
     this.sideMenu = this.shadowRoot.querySelector(".side-menu");
@@ -821,6 +832,13 @@ class SideMenu extends HTMLElement {
 
     // Evento para cerrar el menú si se hace clic fuera
     document.addEventListener("click", this.handleClickOutside.bind(this));
+
+    // Aplicar el tema guardado al cargar la página
+    const darkModePreference = localStorage.getItem("darkMode");
+    if (darkModePreference === "enabled") {
+      this.isDarkMode = true;
+      this.toggleTheme(); // Aplicar el tema oscuro automáticamente
+    }
   }
 
   openMenu() {
@@ -843,10 +861,13 @@ class SideMenu extends HTMLElement {
       this.closeMenu(); // Cierra el menú
     }
   }
+    // Alternar el tema al hacer clic
 
   toggleTheme() {
     // Alternar el estado del modo oscuro
     this.isDarkMode = !this.isDarkMode;
+
+    // localStorage.setItem()
 
     // Forzar el renderizado (reflow) antes de aplicar el tema
     void this.sideMenu.offsetWidth; // Forzar un reflow para sincronización
@@ -885,7 +906,6 @@ class SideMenu extends HTMLElement {
       this.shadowRoot.querySelectorAll(".side-menu ul li a").forEach((link) => {
         link.style.color = "black";
         link.onmouseover = () => {
-          link.style.backgroundColor = "#e0e0e0";
           link.style.borderLeft = "4px solid #000000";
         };
         link.onmouseout = () => {
@@ -894,9 +914,15 @@ class SideMenu extends HTMLElement {
         };
       });
     }
+
     // Sincronizar el cambio de tema en el body
-    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("dark-theme", this.isDarkMode);
+
+    // Guardar la preferencia en localStorage
+    localStorage.setItem("darkMode", this.isDarkMode ? "enabled" : "disabled");
   }
+
+
 }
 
 // Definir el nuevo elemento personalizado
