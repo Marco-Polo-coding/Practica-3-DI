@@ -2,7 +2,8 @@ const articles = [
   // News
   {
     id: 1,
-    image: "https://platform.vox.com/wp-content/uploads/sites/2/2024/08/gettyimages-2165010509.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400",
+    image:
+      "https://platform.vox.com/wp-content/uploads/sites/2/2024/08/gettyimages-2165010509.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400",
     title: "Global Markets React to Unexpected Economic Shifts",
     description:
       "An analysis of how global markets are adjusting to recent economic changes.",
@@ -11,7 +12,8 @@ const articles = [
   },
   {
     id: 2,
-    image: "https://media.gettyimages.com/id/1345724459/es/foto/half-dome.jpg?s=612x612&w=gi&k=20&c=Zpw84P2aWhF_AHBmO8mQFDP270R0whKHXGalD9cEojA=",
+    image:
+      "https://media.gettyimages.com/id/1345724459/es/foto/half-dome.jpg?s=612x612&w=gi&k=20&c=Zpw84P2aWhF_AHBmO8mQFDP270R0whKHXGalD9cEojA=",
     title: "Historic Summit Aims to Address Climate Crisis",
     description:
       "World leaders gather to discuss urgent actions against climate change.",
@@ -20,7 +22,8 @@ const articles = [
   },
   {
     id: 3,
-    image: "https://media.licdn.com/dms/image/D5612AQFr22oanrpOdQ/article-cover_image-shrink_600_2000/0/1710344112152?e=2147483647&v=beta&t=MmB_iooLxFNzWg4y2rpiYPtvDnb50EJOL-FBVMXsGKE",
+    image:
+      "https://media.licdn.com/dms/image/D5612AQFr22oanrpOdQ/article-cover_image-shrink_600_2000/0/1710344112152?e=2147483647&v=beta&t=MmB_iooLxFNzWg4y2rpiYPtvDnb50EJOL-FBVMXsGKE",
     title: "Breakthrough in Renewable Energy Technology",
     description:
       "Scientists announce a significant advancement in renewable energy sources.",
@@ -31,7 +34,8 @@ const articles = [
   // US Election
   {
     id: 4,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMENJOPFKQRs486nWe3p76DzbCxyEa9ICUAg&s",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMENJOPFKQRs486nWe3p76DzbCxyEa9ICUAg&s",
     title: "Candidates Debate Key Issues Ahead of Election",
     description:
       "With the election approaching, candidates focus on key voter concerns.",
@@ -40,7 +44,8 @@ const articles = [
   },
   {
     id: 5,
-    image: "https://static01.nyt.com/images/2024/08/13/multimedia/2024-08-08-dem-registration-index/2024-08-08-dem-registration-index-videoSixteenByNineJumbo1600-v6.png",
+    image:
+      "https://static01.nyt.com/images/2024/08/13/multimedia/2024-08-08-dem-registration-index/2024-08-08-dem-registration-index-videoSixteenByNineJumbo1600-v6.png",
     title: "Voter Registration Hits Record Numbers",
     description:
       "Voter turnout is expected to be high as registration numbers surge.",
@@ -49,7 +54,8 @@ const articles = [
   },
   {
     id: 6,
-    image: "https://images.axios.com/Jk_FjvzxbZIkzobzPVAAkmA5JXI=/0x0:1920x1080/1920x1080/2024/02/16/1708104768290.jpg",
+    image:
+      "https://images.axios.com/Jk_FjvzxbZIkzobzPVAAkmA5JXI=/0x0:1920x1080/1920x1080/2024/02/16/1708104768290.jpg",
     title: "Third-Party Candidates Make Their Mark in Debates",
     description:
       "New voices emerge in the race, offering alternative platforms.",
@@ -60,7 +66,8 @@ const articles = [
   // Sport
   {
     id: 7,
-    image: "https://media.gettyimages.com/id/1439320381/es/foto/los-angeles-ca-carlos-vela-of-lafc-lifts-the-trophy-to-celebrate-with-his-teammates-after.jpg?s=612x612&w=gi&k=20&c=5AcNyKKEyzYLJbg4DkGRBTadIfvVcpd3OJMwO_hNxvQ=",
+    image:
+      "https://media.gettyimages.com/id/1439320381/es/foto/los-angeles-ca-carlos-vela-of-lafc-lifts-the-trophy-to-celebrate-with-his-teammates-after.jpg?s=612x612&w=gi&k=20&c=5AcNyKKEyzYLJbg4DkGRBTadIfvVcpd3OJMwO_hNxvQ=",
     title: "Major League Finals Set to Kick Off",
     description:
       "Fans prepare for an exciting series in this year’s major league finals.",
@@ -69,7 +76,8 @@ const articles = [
   },
   {
     id: 8,
-    image: "https://statsbomb.com/wp-content/uploads/2022/02/PA-42371753-scaled.jpg",
+    image:
+      "https://statsbomb.com/wp-content/uploads/2022/02/PA-42371753-scaled.jpg",
     title: "Underdog Team Shocks in Championship Victory",
     description:
       "An unexpected victory in the national championship surprises fans.",
@@ -78,7 +86,8 @@ const articles = [
   },
   {
     id: 9,
-    image: "https://media.newyorker.com/photos/61380ee55ea384ed026bbd0e/master/pass/Sweet-EliteRunners-1b.jpg",
+    image:
+      "https://media.newyorker.com/photos/61380ee55ea384ed026bbd0e/master/pass/Sweet-EliteRunners-1b.jpg",
     title: "World Records Broken in Track and Field",
     description: "New records set in the annual track and field event.",
     date: "2024-10-08T17:00:00Z",
@@ -88,7 +97,8 @@ const articles = [
   // Business
   {
     id: 10,
-    image: "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff74783ea-1197-4e05-b4ce-2b90c0264ff0_631x404.png",
+    image:
+      "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff74783ea-1197-4e05-b4ce-2b90c0264ff0_631x404.png",
     title: "Tech Giants Report Earnings for Third Quarter",
     description:
       "A look at the latest earnings reports from major tech companies.",
@@ -97,7 +107,8 @@ const articles = [
   },
   {
     id: 11,
-    image: "https://media.istockphoto.com/id/1321662715/photo/global-business-network-concept-sustainable-development-goals-sdgs.jpg?s=612x612&w=0&k=20&c=94nphEqQVYY1_btd30ivdG6Xzc69G_FZ_QgWn5vGus4=",
+    image:
+      "https://media.istockphoto.com/id/1321662715/photo/global-business-network-concept-sustainable-development-goals-sdgs.jpg?s=612x612&w=0&k=20&c=94nphEqQVYY1_btd30ivdG6Xzc69G_FZ_QgWn5vGus4=",
     title: "New Trade Agreements Reshape International Markets",
     description:
       "Countries negotiate new trade deals, impacting global markets.",
@@ -106,7 +117,8 @@ const articles = [
   },
   {
     id: 12,
-    image: "https://about.fb.com/wp-content/uploads/2022/10/Global-State-of-Small-Business_-Recovery-Slowing-But-Economic-Optimism-Remains_Header.jpg",
+    image:
+      "https://about.fb.com/wp-content/uploads/2022/10/Global-State-of-Small-Business_-Recovery-Slowing-But-Economic-Optimism-Remains_Header.jpg",
     title: "Small Businesses Thrive Amid Economic Challenges",
     description:
       "A spotlight on small businesses finding success in uncertain times.",
@@ -117,7 +129,8 @@ const articles = [
   // Innovation
   {
     id: 13,
-    image: "https://img.freepik.com/premium-photo/healthcare-technology-medical-revolution-advance-technology-medical-research-ai-intelligencetransformation-innovation-technology-future-health_1028938-132100.jpg",
+    image:
+      "https://img.freepik.com/premium-photo/healthcare-technology-medical-revolution-advance-technology-medical-research-ai-intelligencetransformation-innovation-technology-future-health_1028938-132100.jpg",
     title: "AI Advances Set to Revolutionize Healthcare",
     description:
       "New AI technologies promise to transform healthcare delivery.",
@@ -126,7 +139,8 @@ const articles = [
   },
   {
     id: 14,
-    image: "https://media.istockphoto.com/id/1348631007/photo/ev-charging-station-for-electric-car-in-concept-of-green-energy-and-eco-power.jpg?s=612x612&w=0&k=20&c=yTL95mCTPWTNqEO4NqiWWSeC_JMINNUJeChE9a6YKVc=",
+    image:
+      "https://media.istockphoto.com/id/1348631007/photo/ev-charging-station-for-electric-car-in-concept-of-green-energy-and-eco-power.jpg?s=612x612&w=0&k=20&c=yTL95mCTPWTNqEO4NqiWWSeC_JMINNUJeChE9a6YKVc=",
     title: "Electric Vehicle Technology Reaches New Heights",
     description: "EV advancements bring improved range and charging speeds.",
     date: "2024-10-07T08:30:00Z",
@@ -145,7 +159,8 @@ const articles = [
   // Culture
   {
     id: 16,
-    image: "https://www.hereandnow365.co.uk/wp-content/uploads/2020/08/diversity_0-1.jpg",
+    image:
+      "https://www.hereandnow365.co.uk/wp-content/uploads/2020/08/diversity_0-1.jpg",
     title: "Celebrating Diversity Through Cultural Festivals",
     description:
       "Festivals highlight the richness of diverse cultures around the world.",
@@ -154,7 +169,8 @@ const articles = [
   },
   {
     id: 17,
-    image: "https://media.istockphoto.com/id/1170383960/photo/still-life-with-fruits.jpg?s=612x612&w=0&k=20&c=zJS6ZmErV7SniKm63uChmOUcfUE7IKlHRqQdqiVbbe8=",
+    image:
+      "https://media.istockphoto.com/id/1170383960/photo/still-life-with-fruits.jpg?s=612x612&w=0&k=20&c=zJS6ZmErV7SniKm63uChmOUcfUE7IKlHRqQdqiVbbe8=",
     title: "The Renaissance of Traditional Crafts",
     description:
       "Traditional crafts are experiencing a revival in the modern era.",
@@ -163,7 +179,8 @@ const articles = [
   },
   {
     id: 18,
-    image: "https://media.istockphoto.com/id/1363627613/photo/multiracial-group-of-young-friends-bonding-outdoors.jpg?s=612x612&w=0&k=20&c=ManrdILSin-JyEZqtdREJqnYUTIJaEQg9FrEh2V8OHA=",
+    image:
+      "https://media.istockphoto.com/id/1363627613/photo/multiracial-group-of-young-friends-bonding-outdoors.jpg?s=612x612&w=0&k=20&c=ManrdILSin-JyEZqtdREJqnYUTIJaEQg9FrEh2V8OHA=",
     title: "Influence of Pop Culture on Youth Identity",
     description:
       "Exploring how pop culture shapes the identity of today’s youth.",
@@ -174,7 +191,8 @@ const articles = [
   // Arts
   {
     id: 19,
-    image: "https://c8.alamy.com/comp/PPTG0W/saatchi-gallery-london-uk-27-september-2018-black-mirror-explores-arts-role-in-social-satire-and-how-political-uncertainty-has-influenced-art-of-recent-years-at-a-time-of-collective-unease-black-mirror-emphasises-the-importance-of-art-and-satire-in-dissecting-power-structures-questioning-societal-norms-and-visualising-political-unrest-providing-light-relief-to-lifes-uncertainties-image-works-by-douglas-kolk-credit-malcolm-parkalamy-live-news-PPTG0W.jpg",
+    image:
+      "https://c8.alamy.com/comp/PPTG0W/saatchi-gallery-london-uk-27-september-2018-black-mirror-explores-arts-role-in-social-satire-and-how-political-uncertainty-has-influenced-art-of-recent-years-at-a-time-of-collective-unease-black-mirror-emphasises-the-importance-of-art-and-satire-in-dissecting-power-structures-questioning-societal-norms-and-visualising-political-unrest-providing-light-relief-to-lifes-uncertainties-image-works-by-douglas-kolk-credit-malcolm-parkalamy-live-news-PPTG0W.jpg",
     title: "Art Exhibitions Challenge Social Norms",
     description:
       "Artists are using their work to question societal expectations.",
@@ -183,7 +201,8 @@ const articles = [
   },
   {
     id: 20,
-    image: "https://decsofdesign.wordpress.com/wp-content/uploads/2012/11/pic.jpg",
+    image:
+      "https://decsofdesign.wordpress.com/wp-content/uploads/2012/11/pic.jpg",
     title: "The Evolution of Digital Art in the 21st Century",
     description: "Digital art has become a dominant force in the art world.",
     date: "2024-10-04T13:45:00Z",
@@ -191,7 +210,8 @@ const articles = [
   },
   {
     id: 21,
-    image: "https://images.adsttc.com/media/images/6315/9693/f55c/665b/c481/9899/newsletter/how-public-art-shapes-cities_1.jpg?1662359194",
+    image:
+      "https://images.adsttc.com/media/images/6315/9693/f55c/665b/c481/9899/newsletter/how-public-art-shapes-cities_1.jpg?1662359194",
     title: "Public Art Projects Transform Urban Spaces",
     description:
       "Public art installations are changing the face of cities worldwide.",
@@ -202,7 +222,8 @@ const articles = [
   // Travel
   {
     id: 22,
-    image: "https://media.istockphoto.com/id/904172104/photo/weve-made-it-all-this-way-i-am-proud.jpg?s=612x612&w=0&k=20&c=MewnsAhbeGRcMBN9_ZKhThmqPK6c8nCT8XYk5ZM_hdg=",
+    image:
+      "https://media.istockphoto.com/id/904172104/photo/weve-made-it-all-this-way-i-am-proud.jpg?s=612x612&w=0&k=20&c=MewnsAhbeGRcMBN9_ZKhThmqPK6c8nCT8XYk5ZM_hdg=",
     title: "Top Destinations for Adventure Travelers",
     description:
       "Explore destinations perfect for thrill-seekers and adventurers.",
@@ -211,7 +232,8 @@ const articles = [
   },
   {
     id: 23,
-    image: "https://media.istockphoto.com/id/1372488167/photo/a-lake-in-the-shape-of-an-airplane-in-the-middle-of-untouched-nature-a-concept-illustrating.jpg?s=612x612&w=0&k=20&c=d-2X_9pmP_RRfvNfTsptxluq5mCcF_ahUZhMi6ESlow=",
+    image:
+      "https://media.istockphoto.com/id/1372488167/photo/a-lake-in-the-shape-of-an-airplane-in-the-middle-of-untouched-nature-a-concept-illustrating.jpg?s=612x612&w=0&k=20&c=d-2X_9pmP_RRfvNfTsptxluq5mCcF_ahUZhMi6ESlow=",
     title: "Sustainable Tourism: Traveling Responsibly",
     description: "Tips for making eco-friendly choices while traveling.",
     date: "2024-10-10T16:45:00Z",
@@ -219,7 +241,8 @@ const articles = [
   },
   {
     id: 24,
-    image: "https://worldwildschooling.com/wp-content/uploads/2024/03/Hidden-Gems-Across-the-Globe_Lofoten-Islands-Norway_Stefano-Zaccaria_Adobe-Stock-Photo_564968224.jpg",
+    image:
+      "https://worldwildschooling.com/wp-content/uploads/2024/03/Hidden-Gems-Across-the-Globe_Lofoten-Islands-Norway_Stefano-Zaccaria_Adobe-Stock-Photo_564968224.jpg",
     title: "Hidden Gems: Unexplored Destinations",
     description: "Discover lesser-known places that offer unique experiences.",
     date: "2024-10-12T12:15:00Z",
@@ -229,7 +252,8 @@ const articles = [
   // Earth
   {
     id: 25,
-    image: "https://www.shutterstock.com/shutterstock/photos/1269582256/display_1500/stock-photo--climate-change-withered-earth-1269582256.jpg",
+    image:
+      "https://www.shutterstock.com/shutterstock/photos/1269582256/display_1500/stock-photo--climate-change-withered-earth-1269582256.jpg",
     title: "Global Efforts to Combat Climate Change",
     description:
       "How nations are joining forces to address the climate crisis.",
@@ -238,7 +262,8 @@ const articles = [
   },
   {
     id: 26,
-    image: "https://www.green.earth/hs-fs/hubfs/Why%20should%20endangered%20species%20be%20protected%20_visual%201.png?width=1200&height=800&name=Why%20should%20endangered%20species%20be%20protected%20_visual%201.png",
+    image:
+      "https://www.green.earth/hs-fs/hubfs/Why%20should%20endangered%20species%20be%20protected%20_visual%201.png?width=1200&height=800&name=Why%20should%20endangered%20species%20be%20protected%20_visual%201.png",
     title: "Preserving Endangered Species",
     description:
       "A look into initiatives protecting wildlife around the world.",
@@ -247,7 +272,8 @@ const articles = [
   },
   {
     id: 27,
-    image: "https://thumbs.dreamstime.com/b/reforestation-project-desert-landscape-goal-restoring-ecosystem-balance-created-generative-ai-280901970.jpg",
+    image:
+      "https://thumbs.dreamstime.com/b/reforestation-project-desert-landscape-goal-restoring-ecosystem-balance-created-generative-ai-280901970.jpg",
     title: "Reforestation Projects Aim to Restore Ecosystems",
     description: "Efforts to restore forests are gaining momentum globally.",
     date: "2024-10-04T12:30:00Z",
@@ -257,7 +283,8 @@ const articles = [
   // Video
   {
     id: 28,
-    image: "https://cdn.shopify.com/s/files/1/0326/7189/t/65/assets/pf-926b6263-aae1-45e9-9d84-0d34c4168128--Rwanda10_1200x.jpeg?v=1559919439",
+    image:
+      "https://cdn.shopify.com/s/files/1/0326/7189/t/65/assets/pf-926b6263-aae1-45e9-9d84-0d34c4168128--Rwanda10_1200x.jpeg?v=1559919439",
     title: "Top Viral Videos of the Year",
     description: "A roundup of the most popular viral videos of 2024.",
     date: "2024-10-15T18:45:00Z",
@@ -265,7 +292,8 @@ const articles = [
   },
   {
     id: 29,
-    image: "https://bloximages.chicago2.vip.townnews.com/bozemandailychronicle.com/content/tncms/assets/v3/editorial/4/91/491681a4-52ca-5856-a362-db6e6b4fc9c2/671a86d6a348e.image.jpg?resize=750%2C500",
+    image:
+      "https://bloximages.chicago2.vip.townnews.com/bozemandailychronicle.com/content/tncms/assets/v3/editorial/4/91/491681a4-52ca-5856-a362-db6e6b4fc9c2/671a86d6a348e.image.jpg?resize=750%2C500",
     title: "Documentary Series Shines Light on Social Issues",
     description:
       "A powerful documentary series explores pressing social topics.",
@@ -274,7 +302,8 @@ const articles = [
   },
   {
     id: 30,
-    image: "https://static.demilked.com/wp-content/uploads/2019/07/5d2327d242f24-behind-the-scenes-of-hollywood-movies-45-5d1ca67714fda__700.jpg",
+    image:
+      "https://static.demilked.com/wp-content/uploads/2019/07/5d2327d242f24-behind-the-scenes-of-hollywood-movies-45-5d1ca67714fda__700.jpg",
     title: "Behind the Scenes of the Year's Biggest Film",
     description: "An exclusive look at the making of a blockbuster film.",
     date: "2024-10-05T11:45:00Z",
@@ -284,7 +313,8 @@ const articles = [
   // Live
   {
     id: 31,
-    image: "https://static01.nyt.com/images/2023/03/20/climate/20cli-ipcc/20cli-ipcc-mediumSquareAt3X-v2.jpg",
+    image:
+      "https://static01.nyt.com/images/2023/03/20/climate/20cli-ipcc/20cli-ipcc-mediumSquareAt3X-v2.jpg",
     title: "Live Coverage of Global Climate Summit",
     description: "Follow live updates from the global climate summit.",
     date: "2024-10-10T12:00:00Z",
@@ -292,7 +322,8 @@ const articles = [
   },
   {
     id: 32,
-    image: "https://ichef.bbci.co.uk/news/480/cpsprodpb/E4E7/production/_104399585_house_district_winshare-nc.png.webp",
+    image:
+      "https://ichef.bbci.co.uk/news/480/cpsprodpb/E4E7/production/_104399585_house_district_winshare-nc.png.webp",
     title: "Real-Time Election Results for Midterms",
     description: "Get real-time results from the U.S. midterm elections.",
     date: "2024-10-15T20:00:00Z",
@@ -300,7 +331,8 @@ const articles = [
   },
   {
     id: 33,
-    image: "https://i0.wp.com/www.directrelief.org/wp-content/uploads/2019/05/zwHurricaneMichaelSaunday35-e1606773869524.jpg?fit=1200%2C675&ssl=1",
+    image:
+      "https://i0.wp.com/www.directrelief.org/wp-content/uploads/2019/05/zwHurricaneMichaelSaunday35-e1606773869524.jpg?fit=1200%2C675&ssl=1",
     title: "Breaking News: Emergency Response to Natural Disaster",
     description:
       "Live updates on emergency response efforts after a natural disaster.",
@@ -309,89 +341,106 @@ const articles = [
   },
 ];
 
+const gridItems = document.querySelectorAll(".grid-item");
 
+// Obtener el nombre del archivo HTML actual (sin la ruta completa)
+const pageName = window.location.pathname.split("/").pop().split(".")[0];
 
-document.addEventListener("DOMContentLoaded", () => {
-  const gridItems = document.querySelectorAll(".grid-item");
+// Filtrar los artículos según el nombre de la página
+let filteredArticles;
+switch (pageName) {
+  case "index":
+    filteredArticles = articles; // Mostrar todos los artículos en la página principal
+    break;
+  case "news":
+    filteredArticles = articles.filter(
+      (article) => article.category === "News"
+    );
+    break;
+  case "uselection":
+    filteredArticles = articles.filter(
+      (article) => article.category === "US Election"
+    );
+    break;
+  case "sports":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Sport"
+    );
+    break;
+  case "business":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Business"
+    );
+    break;
+  case "innovation":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Innovation"
+    );
+    break;
+  case "culture":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Culture"
+    );
+    break;
+  case "arts":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Arts"
+    );
+    break;
+  case "travel":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Travel"
+    );
+    break;
+  case "earth":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Earth"
+    );
+    break;
+  case "video":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Video"
+    );
+    break;
+  case "live":
+    filteredArticles = articles.filter(
+      (article) => article.category === "Live"
+    );
+    break;
+  default:
+    filteredArticles = articles; // Si no se encuentra la página, mostrar todos los artículos
+    break;
+}
 
-  // Obtener el nombre del archivo HTML actual (sin la ruta completa)
-  const pageName = window.location.pathname.split("/").pop().split(".")[0];
+// Recorrer cada elemento del grid y asignar los datos del array de artículos filtrados
+filteredArticles.forEach((article, index) => {
+  if (gridItems[index]) {
+    // Asigna la URL de la imagen al elemento img y añade el evento de clic
+    const imgElement = gridItems[index].querySelector(".article-image");
+    imgElement.src = article.image;
+    imgElement.alt = article.title;
 
-  // Filtrar los artículos según el nombre de la página
-  let filteredArticles;
-  switch (pageName) {
-    case "index":
-      filteredArticles = articles; // Mostrar todos los artículos en la página principal
-      break;
-    case "news":
-      filteredArticles = articles.filter((article) => article.category === "News");
-      break;
-    case "uselection":
-      filteredArticles = articles.filter((article) => article.category === "US Election");
-      break;
-    case "sports":
-      filteredArticles = articles.filter((article) => article.category === "Sport");
-      break;
-    case "business":
-      filteredArticles = articles.filter((article) => article.category === "Business");
-      break;
-    case "innovation":
-      filteredArticles = articles.filter((article) => article.category === "Innovation");
-      break;
-    case "culture":
-      filteredArticles = articles.filter((article) => article.category === "Culture");
-      break;
-    case "arts":
-      filteredArticles = articles.filter((article) => article.category === "Arts");
-      break;
-    case "travel":
-      filteredArticles = articles.filter((article) => article.category === "Travel");
-      break;
-    case "earth":
-      filteredArticles = articles.filter((article) => article.category === "Earth");
-      break;
-    case "video":
-      filteredArticles = articles.filter((article) => article.category === "Video");
-      break;
-    case "live":
-      filteredArticles = articles.filter((article) => article.category === "Live");
-      break;
-    default:
-      filteredArticles = articles; // Si no se encuentra la página, mostrar todos los artículos
-      break;
+    // Añade el evento de clic para redirigir al enlace de la noticia
+    imgElement.addEventListener("click", () => {
+      window.location.href = `article.html?id=${article.id}`;
+    });
+
+    // Asigna el título y el enlace del artículo
+    const titleElement = gridItems[index].querySelector(".title a");
+    titleElement.textContent = article.title;
+    titleElement.href = `article.html?id=${article.id}`;
+
+    // Asigna la descripción del artículo
+    const descriptionElement = gridItems[index].querySelector(".description");
+    descriptionElement.textContent = article.description;
+
+    // Asigna la fecha al componente de tiempo relativo
+    const relativeTimeElement = gridItems[index].querySelector("relative-time");
+    // relativeTimeElement.setAttribute("time", new Date(article.date).getTime());
+    relativeTimeElement.outerHTML = `<relative-time time="${article.date}"/>`;
   }
-
-  // Recorrer cada elemento del grid y asignar los datos del array de artículos filtrados
-  filteredArticles.forEach((article, index) => {
-    if (gridItems[index]) {
-      // Asigna la URL de la imagen al elemento img y añade el evento de clic
-      const imgElement = gridItems[index].querySelector(".article-image");
-      imgElement.src = article.image;
-      imgElement.alt = article.title;
-
-      // Añade el evento de clic para redirigir al enlace de la noticia
-      imgElement.addEventListener("click", () => {
-        window.location.href = `article.html?id=${article.id}`;
-      });
-
-      // Asigna el título y el enlace del artículo
-      const titleElement = gridItems[index].querySelector(".title a");
-      titleElement.textContent = article.title;
-      titleElement.href = `article.html?id=${article.id}`;
-
-      // Asigna la descripción del artículo
-      const descriptionElement = gridItems[index].querySelector(".description");
-      descriptionElement.textContent = article.description;
-
-      // Asigna la fecha al componente de tiempo relativo
-      const relativeTimeElement = gridItems[index].querySelector("relative-time");
-      relativeTimeElement.setAttribute("time", new Date(article.date).getTime());
-    }
-  });
 });
-
-
-
+console.log(filteredArticles);
 
 const getId = () => {
   const searchParams = new URLSearchParams(location.search.slice(1));
@@ -408,7 +457,7 @@ class RelativeTime extends HTMLElement {
   }
   render() {
     const timeValue = this.getAttribute("time");
-    const time = timeValue ? new Date(Number(timeValue)).getTime() : Date.now();
+    const time = timeValue ? new Date(timeValue).getTime() : Date.now();
     const now = Date.now();
     const diff = now - time;
 
@@ -438,7 +487,6 @@ class RelativeTime extends HTMLElement {
   }
 }
 customElements.define("relative-time", RelativeTime);
-
 
 class CustomSearch extends HTMLElement {
   constructor() {
@@ -505,10 +553,11 @@ class CustomSearch extends HTMLElement {
       li.querySelector(".card .item-image").src = article.image;
 
       // Asigna la descripción del artículo
-      li.querySelector(".card .item-description").textContent = article.description;
+      li.querySelector(".card .item-description").textContent =
+        article.description;
 
       // Asigna la fecha en formato timestamp al elemento relative-time
-      li.querySelector("relative-time").setAttribute("time", new Date(article.date).getTime());
+      li.querySelector("relative-time").setAttribute("time", article.date);
 
       // Configura el enlace y el texto del título del artículo
       const enlace = li.querySelector(".card .item-title a");
@@ -523,7 +572,8 @@ class CustomSearch extends HTMLElement {
   // Maneja el cierre del diálogo si se hace clic fuera de él
   handleClickOutside(event) {
     const dialog = this.querySelector("dialog");
-    if (!dialog.contains(event.target)) { // Verifica si el clic ocurrió fuera del diálogo
+    if (!dialog.contains(event.target)) {
+      // Verifica si el clic ocurrió fuera del diálogo
       dialog.close(); // Cierra el diálogo
       document.removeEventListener("mousedown", this.handleClickOutside); // Remueve el evento después de cerrar
     }
@@ -532,9 +582,6 @@ class CustomSearch extends HTMLElement {
 
 // Define el elemento personalizado para la búsqueda
 customElements.define("custom-search", CustomSearch);
-
-
-
 
 class CustomArticle extends HTMLElement {
   constructor() {
@@ -549,7 +596,7 @@ class CustomArticle extends HTMLElement {
   render() {
     // Busca el artículo en el array de artículos usando el id
     const article = articles.find((article) => article.id === this.articleId);
-    
+
     if (article) {
       // Asigna el título del artículo
       const h1 = this.querySelector("h1");
@@ -566,12 +613,12 @@ class CustomArticle extends HTMLElement {
 
       // Asigna la fecha de publicación en un elemento <relative-time>
       const relativeTimeElement = this.querySelector("relative-time");
-      relativeTimeElement.setAttribute("time", new Date(article.date).getTime());
+      // relativeTimeElement.setAttribute("time", new Date(article.date).getTime());
+      relativeTimeElement.outerHTML = `<relative-time time="${article.date}"/>`;
     }
   }
 }
 customElements.define("custom-article", CustomArticle);
-
 
 // Seleccionamos todos los enlaces dentro del menú
 const menuLinks = document.querySelectorAll(".main-menu ul li a");
@@ -603,24 +650,23 @@ document.querySelector(".logo").addEventListener("click", () => {
   window.location.href = "./index.html";
 });
 
-
 class SideMenu extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
-        /* Estilos para el menú lateral */
+        /* Estilos para el menú lateral en modo claro */
         .side-menu {
           height: 100%;
           width: 200px;
           position: fixed;
           top: 0;
           left: -250px;
-          background-color: #111;
-          color: white;
+          background-color: #FFFFFF;
+          color: black;
           overflow-x: hidden;
-          transition: left 0.3s ease;
+          transition: left 0.3s ease, background-color 0.3s ease, color 0.3s ease;
           z-index: 2000;
           padding-top: 60px;
         }
@@ -636,11 +682,11 @@ class SideMenu extends HTMLElement {
           background: transparent;
           border: none;
           color: black;
-          position: sticky;
+          position: fixed;
           top: 5px;
           left: 10px;
           z-index: 1100;
-          transition: top 0.3s ease;
+          transition: top 0.3s ease, color 0.3s ease;
         }
 
         /* Clase para ocultar el botón de las tres rayas cuando el menú está abierto */
@@ -655,8 +701,9 @@ class SideMenu extends HTMLElement {
           font-size: 30px;
           background: none;
           border: none;
-          color: white;
+          color: black;
           cursor: pointer;
+          transition: color 0.3s ease;
         }
 
         .theme-toggle {
@@ -670,7 +717,7 @@ class SideMenu extends HTMLElement {
           color: black;
           border: none;
           border-radius: 5px;
-          transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .theme-toggle:hover {
@@ -688,16 +735,44 @@ class SideMenu extends HTMLElement {
 
         .side-menu ul li a {
           text-decoration: none;
-          color: white;
+          color: black;
           display: block;
-          transition: border-left 0.3s ease, padding-left 0.3s ease, background-color 0.3s ease;
+          transition: border-left 0.3s ease, padding-left 0.3s ease, background-color 0.3s ease, color 0.3s ease;
         }
 
         /* Estilo para el enlace en hover */
         .side-menu ul li a:hover {
-          border-left: 4px solid #FFFFFF;
+          border-left: 4px solid #000000;
           padding-left: 16px;
+        }
+
+        /* Modo oscuro */
+        body.dark-theme .side-menu {
+          background-color: #111;
+          color: white;
+        }
+
+        body.dark-theme .menu-toggle {
+          color: white;
+        }
+
+        body.dark-theme .close-btn {
+          color: white;
+        }
+
+        body.dark-theme .theme-toggle {
           background-color: #333;
+          color: white;
+        }
+
+        body.dark-theme .side-menu ul li a {
+          color: white;
+        }
+
+        body.dark-theme .side-menu ul li a:hover {
+          background-color: #333;
+          color: white;
+          border-left: 4px solid #ffffff;
         }
       </style>
 
@@ -736,10 +811,8 @@ class SideMenu extends HTMLElement {
     // Cerrar el menú cuando se hace clic en el botón de cerrar
     this.closeBtn.addEventListener("click", this.closeMenu.bind(this));
 
+    // Alternar el tema oscuro/claro
     this.themeToggleBtn.addEventListener("click", this.toggleTheme.bind(this));
-
-    // Añadir el evento de scroll para ajustar la posición del menú
-    window.addEventListener("scroll", this.handleScroll.bind(this));
 
     // Escuchar clics dentro del shadowRoot y propagar al documento
     this.shadowRoot.addEventListener("click", (event) => {
@@ -748,16 +821,6 @@ class SideMenu extends HTMLElement {
 
     // Evento para cerrar el menú si se hace clic fuera
     document.addEventListener("click", this.handleClickOutside.bind(this));
-  }
-
-  handleScroll() {
-    if (window.scrollY > 0) {
-      this.menuToggle.style.position = "fixed";
-      this.menuToggle.style.top = "-7px";
-    } else {
-      this.menuToggle.style.position = "sticky";
-      this.menuToggle.style.top = "5px";
-    }
   }
 
   openMenu() {
@@ -769,7 +832,7 @@ class SideMenu extends HTMLElement {
     this.sideMenu.classList.remove("open");
     this.menuToggle.classList.remove("hidden"); // Muestra el botón de las tres rayas
   }
-  
+
   handleClickOutside(event) {
     // Comprueba si el menú está abierto y si el clic ocurrió fuera del menú
     if (
@@ -782,21 +845,62 @@ class SideMenu extends HTMLElement {
   }
 
   toggleTheme() {
-    // Cambia entre los temas claro y oscuro al añadir/quitar una clase al `body`
+    // Alternar el estado del modo oscuro
+    this.isDarkMode = !this.isDarkMode;
+
+    // Forzar el renderizado (reflow) antes de aplicar el tema
+    void this.sideMenu.offsetWidth; // Forzar un reflow para sincronización
+
+    // Actualizar los estilos del `side-menu` y sus elementos según el tema actual
+    if (this.isDarkMode) {
+      this.sideMenu.style.backgroundColor = "#111";
+      this.sideMenu.style.color = "white";
+      this.themeToggleBtn.style.backgroundColor = "#333";
+      this.themeToggleBtn.style.color = "white";
+      this.closeBtn.style.color = "white";
+      this.menuToggle.style.color = "white";
+      this.themeToggleBtn.textContent = "☀️ Light Mode";
+
+      // Cambiar el color de los enlaces y sus estados de hover
+      this.shadowRoot.querySelectorAll(".side-menu ul li a").forEach((link) => {
+        link.style.color = "white";
+        link.onmouseover = () => {
+          link.style.borderLeft = "4px solid #ffffff";
+        };
+        link.onmouseout = () => {
+          link.style.backgroundColor = "transparent";
+          link.style.borderLeft = "none";
+        };
+      });
+    } else {
+      this.sideMenu.style.backgroundColor = "#FFFFFF";
+      this.sideMenu.style.color = "black";
+      this.themeToggleBtn.style.backgroundColor = "#f1f1f1";
+      this.themeToggleBtn.style.color = "black";
+      this.closeBtn.style.color = "black";
+      this.menuToggle.style.color = "black";
+      this.themeToggleBtn.textContent = "🌙 Dark Mode";
+
+      // Restaurar el color de los enlaces y sus estados de hover
+      this.shadowRoot.querySelectorAll(".side-menu ul li a").forEach((link) => {
+        link.style.color = "black";
+        link.onmouseover = () => {
+          link.style.backgroundColor = "#e0e0e0";
+          link.style.borderLeft = "4px solid #000000";
+        };
+        link.onmouseout = () => {
+          link.style.backgroundColor = "transparent";
+          link.style.borderLeft = "none";
+        };
+      });
+    }
+    // Sincronizar el cambio de tema en el body
     document.body.classList.toggle("dark-theme");
-
-    // Actualizar el texto del botón según el tema actual
-    const isDarkMode = document.body.classList.contains("dark-theme");
-    this.themeToggleBtn.textContent = isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
   }
-
 }
 
 // Definir el nuevo elemento personalizado
 customElements.define("side-menu", SideMenu);
-
-
-
 
 // Obtener la URL actual y el nombre del archivo
 const currentPath = window.location.pathname.split("/").pop();

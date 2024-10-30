@@ -6,6 +6,7 @@ body {
 body.dark-theme {
   background-color: #111;
   color: white;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 body.dark-theme a {
@@ -17,35 +18,73 @@ body.dark-theme .side-menu {
   color: #f1f1f1;
 }
 
-body.dark-theme .main-menu {
-  background-color: #222;
+body.dark-theme .main-menu,
+body.dark-theme .main-menu ul li a{
+  background-color: #111;
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+
 body.dark-theme .grid-item {
-  background-color: #333;
-  color: #f1f1f1;
+  background-color: #111;
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 body.dark-theme .search-result-item {
   background-color: #444;
 }
 
-body.dark-theme .title, 
-body.dark-theme .item-title a, 
-body.dark-theme .description, 
+body.dark-theme dialog {
+ background-color: #333;
+}
+
+body.dark-theme .title,
+body.dark-theme .item-title a,
+body.dark-theme .item-title,
+body.dark-theme .title-busqueda,
+body.dark-theme .description,
+body.dark-theme .item-description,
 body.dark-theme relative-time {
-  color: #f1f1f1;
+  color: #ffffff !important; /* Asegura que el texto sea blanco en modo oscuro */
+    transition: color 0.1s ease, background-color 0.3s ease;
 }
 
 body.dark-theme .article-image {
   border: 1px solid #777;
 }
 
+body.dark-theme .dialog-search {
+  color: white; /* Color para el modo oscuro */
+}
 
+body.dark-theme .menu-toggle {
+  color: white; /* Color para el modo oscuro */
+}
+
+body.dark-theme .logo {
+  color: #111;
+}
+
+body.dark-theme .logo-item {
+  background-color: #ffffff;
+}
+
+/* Cambia el color del subrayado y el hover en el modo oscuro */
+body.dark-theme .main-menu ul li a::after {
+  background-color: white; /* Cambia el color del subrayado a blanco en modo oscuro */
+}
+
+body.dark-theme .main-menu ul li a:hover,
+body.dark-theme .main-menu ul li a.active {
+  color: white; /* Cambia el color del texto a blanco en modo oscuro */
+}
 
 .logo {
   color: white;
   text-align: center;
+  font-weight: bolder;
   margin: auto;
   cursor: pointer;
   .logo-item {
@@ -85,6 +124,8 @@ body.dark-theme .article-image {
   padding: 0;
   margin: 0;
   justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .main-menu ul li {
